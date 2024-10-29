@@ -1,0 +1,18 @@
+{
+    "name": "iamlucaswolf.com",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    // From version 26, Docker resolves localhost to IPv6 ::1 by default.
+    // This causes problems with port-forwarding: https://github.com/vitejs/vite/issues/16522#issuecomment-2084322973
+    // Disable IPv6 until these issues have been resolved.
+    "runArgs": ["--sysctl", "net.ipv6.conf.all.disable_ipv6=1"],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.vscode-github-actions",
+                "astro-build.astro-vscode"
+            ]
+        }
+    }
+}
