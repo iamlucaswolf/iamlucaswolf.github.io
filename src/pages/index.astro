@@ -1,39 +1,26 @@
 ---
-
+import PageLayout from "../layouts/PageLayout.astro";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Lucas Wolf</title>
-	</head>
-	<body>
-		<h1>Hi, I'm Lucas Wolf.</h1>
-		<ul>
-			<li><a href="https://linkedin.com/in/iamlucaswolf">LinkedIn</a></li>
-			<li><a href="https://github.com/iamlucaswolf">GitHub</a></li>
-		</ul>
-		<p>
+<PageLayout title="Lucas Wolf">
+	<h1 class="pb-4">Hi, I am Lucas.</h1>
+	
+	<p class="pb-4">
 		I'm a Software Engineer living in Munich, Germany.
-		</p>
-		<p>
+	</p>
+	<p class="pb-4">
 		My passion lies in building high-performance software and solving complex quantitative problems. 
 		I am interested in understanding the full stack; from high-level mathematics down to low-level hardware architecture.
-		</p>
-		<p>
+	</p>
+	<p class="pb-4">
 		Since 2024, I've been working on <a href="https://tableau.github.io/hyper-db/journey">Hyper</a>, an in-memory database originating from award-winning research at my alma mater, TU Munich. 
 		Today, Hyper powers analytical workloads at Salesforce (prev. Tableau).
-		</p>
-		<p>
+	</p>
+	<p class="pb-4">
 		Outside work, I enjoy listening to and playing music, digital photography and staying physically fit.
 		My goal for 2025 is to explore more of this beautiful world.
-		</p>
-		<p>
+	</p>
+	<p class="pb-4">
 		This is my personal blog, views are my own.
 		Work in progress.
-		</p>
-	</body>
-</html>
+	</p>
+</PageLayout>
